@@ -27,10 +27,10 @@ public class Sale {
         this.productExpense = productExpense;
     }
 
-    public void displayInfo() {
+    public void displayInformation() {
         System.out.println("Date: " + date);
-        System.out.println("Cus Name: " + customer.getName());
-        System.out.println("Cus Type: " + customer.getType());
+        System.out.println("Customer Name: " + customer.getName());
+        System.out.println("Customer Type: " + customer.getType());
         System.out.println("Service Expense: $" + serviceExpense);
         System.out.println("Product Expense: $" + productExpense);
         System.out.println("Bill: $" + getTotalBill());

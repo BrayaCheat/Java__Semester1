@@ -32,13 +32,13 @@ public class Main {
 
     }
     private static Integer getIntegerInput(Scanner scanner) {
-        System.out.print("Number (enter -1 to stop): ");
+        System.out.print("Number (press -1 to stop): ");
 
         if (scanner.hasNextInt()) {
             return scanner.nextInt();
         } else {
             scanner.next();
-            System.out.println("Invalid input. Please enter a valid number or -1 to stop.");
+            System.out.println("Invalid! Enter a number or press -1 to stop.");
             return null;
         }
     }
@@ -51,7 +51,7 @@ public class Main {
     }
 
     private static void displayEnteredNumbers(int[] numbers, int size) {
-        System.out.println("\nEntered numbers:");
+        System.out.println("\nPlease enter the numbers:");
 
         for (int i = 0; i < size; i++) {
             System.out.print(numbers[i] + " ");
